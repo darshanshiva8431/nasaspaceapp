@@ -2,7 +2,7 @@
 ### *GHG Insight*   
 # 2. Project Description 
 ### An introduction to greenhouse gases (GHG):
-#### *Heat trap*: ##### 
+#### *Heat trap*:  
 Greenhouse gases trap heat in the atmosphere and contribute to global warming.
 #### *Environmental impact*: Affects ecosystems, climate and human health.
 Importance of management: Important for individuals, companies and authorities committed to sustainability.
