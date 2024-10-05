@@ -18,7 +18,7 @@ _Important for **individuals, companies** and authorities committed to sustaina
 ### Types of greenhouse gas calculators
 1. **Individual check**:
 *for buildings to estimate greenhouse gas emissions.
-*Prepare recommendations for life changes.
+##### *Prepare recommendations for life changes.
 2. **Business analyst**:
 *Helps companies assess emissions from operations and supply chains.
 *Focus on the confirmation frame.
