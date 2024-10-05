@@ -1,4 +1,4 @@
-# 1. Project Title - _#GHG Insight#_    
+# 1. Project Title - _GHG Insight_    
 # 2. Project Description 
 GHG calculator tracker is a powerful greenhouse gas (GHG) calculator designed to help users accurately measure and manage their carbon emissions. Whether you're an individual, a business, or a community organization, Carbon Tracker provides an easy-to-use platform to track your carbon footprint.
 3. Features
