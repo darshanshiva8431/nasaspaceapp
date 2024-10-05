@@ -94,7 +94,7 @@ Focus on the confirmation frame.
 
 2. **Database Management Systems**: These are used to store and manage data related to **emissions factors, user inputs, and historical data** for analysis and reporting.
 
-3.**APIs**: Application Programming Interfaces may be used to integrate with other systems, such as **ERP (Enterprise Resource Planning) or CRM (Customer Relationship Management) systems**, for **data collection**.
+3.  **APIs**: Application Programming Interfaces may be used to integrate with other systems, such as **ERP (Enterprise Resource Planning) or CRM (Customer Relationship Management) systems**, for **data collection**.
 
 4. **Data Analytics Tools**: Statistical and analytical tools are employed to process and analyze the collected data, providing insights and trends in emissions.
 
