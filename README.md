@@ -1,5 +1,5 @@
 # 1. Project Title 
-### *GHG Insight*   
+## *GHG Insight*   
 # 2. Project Description 
 ###    An Introduction to GreenHouse gases (GHG):
 ##### * *Heat trap*:  
