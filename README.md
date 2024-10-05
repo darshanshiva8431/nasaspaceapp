@@ -108,7 +108,7 @@ Focus on the confirmation frame.
 
 9. **Emission Factors Databases**: Many calculators rely on established databases that provide **standardized emission factors** for various activities and industries.
 
-10.**Reporting Frameworks**: Tools may incorporate reporting standards such as the **GHG Protocol or ISO 14064** to ensure **compliance and consistency** in reporting.
+10.  **Reporting Frameworks**: Tools may incorporate reporting standards such as the **GHG Protocol or ISO 14064** to ensure **compliance and consistency** in reporting.
 
 11. **Geospatial Technologies**: GIS (Geographic Information Systems) may be used for spatial analysis of emissions data, especially for **large organizations with multiple locations**.
 
