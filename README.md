@@ -11,7 +11,10 @@ _Important for **individuals, companies** and authorities committed to sustaina
 #### Definition of Greenhouse Gases:
 **greenhouse gases**: include **carbon dioxide (CO2), methane (CH4), nitrogen oxides (N2O) and gases containing fluorine**.
 ### Emission sources:
-###### Combustion of fossil fuels for energy, Industrial processes, Agricultural practices, Waste management.
+###### Combustion of fossil fuels for energy
+###### Industrial processes
+###### Agricultural practices
+###### Waste management.
 3. Features
 4. Technologies Used
 5. Installation Instructions
