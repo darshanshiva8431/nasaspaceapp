@@ -26,6 +26,10 @@ Focus on the confirmation frame.
 *Good for industries like agriculture, construction and transportation.
 4. **National and Regional Guidelines**:
 *Used by government and non-governmental organizations for policy development and compliance.
+### Conclusion:
+*Combining knowledge and action : GHG calculations allow users to reduce their carbon footprint.
+*Sustainability Guide: Essential tools to guide sustainability efforts in all areas.
+*Collective Action: Mobilize people and organizations to control and reduce greenhouse gas emissions for a better planet.
 
 3. Features
 4. Technologies Used
