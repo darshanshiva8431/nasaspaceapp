@@ -2,13 +2,14 @@
 ### *GHG Insight*   
 # 2. Project Description 
 ### * An Introduction to GreenHouse gases (GHG):
-#### *Heat trap*:  
+##### *Heat trap*:  
 Greenhouse gases trap heat in the atmosphere and contribute to **global warming**.
-#### *Environmental impact*: 
+##### *Environmental impact*: 
 Affects ecosystems, climate and human health.
-#### *Importance of management*: 
+##### *Importance of management*: 
 Important for **individuals, companies** and authorities committed to sustainability.
-
+#### Definition of Greenhouse Gases:
+**greenhouse gases**: include carbon dioxide (CO2), methane (CH4), nitrogen oxides (N2O) and gases containing fluorine.
 3. Features
 4. Technologies Used
 5. Installation Instructions
