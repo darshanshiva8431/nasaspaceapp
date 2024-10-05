@@ -88,7 +88,7 @@ Focus on the confirmation frame.
     - Options to explore carbon offset programs for balancing emissions.
     - Features to calculate how many offsets are needed based on user emissions.
 
--By incorporating these features, a GHG calculator tracker can effectively help users measure, manage, and reduce their greenhouse gas emissions, contributing to global sustainability efforts.
+-By incorporating these features, a **GHG calculator tracker can effectively help users measure, manage, and reduce their greenhouse gas emissions, contributing to global sustainability efforts**.
 4. Technologies Used
 5. Installation Instructions
 6. How to Use
