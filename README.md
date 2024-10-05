@@ -7,7 +7,7 @@ Greenhouse gases trap heat in the atmosphere and contribute to **global warming*
 #### *Environmental impact*: 
 Affects ecosystems, climate and human health.
 #### *Importance of management*: 
-Important for individuals, companies and authorities committed to sustainability.
+Important for **individuals, companies** and authorities committed to sustainability.
 
 3. Features
 4. Technologies Used
