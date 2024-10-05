@@ -12,6 +12,7 @@ _Important for **individuals, companies** and authorities committed to sustaina
 **greenhouse gases**: include **carbon dioxide (CO2), methane (CH4), nitrogen oxides (N2O) and gases containing fluorine**.
 ### Emission sources:
 Combustion of fossil fuels for energy.
+Industrial processes
 
 
 3. Features
