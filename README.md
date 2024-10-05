@@ -1,7 +1,7 @@
 # 1. Project Title 
 ### *GHG Insight*   
 # 2. Project Description 
-### *An Introduction to GreenHouse gases (GHG):
+### * An Introduction to GreenHouse gases (GHG):
 #### *Heat trap*:  
 Greenhouse gases trap heat in the atmosphere and contribute to **global warming**.
 #### *Environmental impact*: 
