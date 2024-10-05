@@ -7,7 +7,7 @@
 ##### * *Environmental impact*: 
    Affects ecosystems, climate and human health.
 ### *Importance of management*: 
-Important for **individuals, companies** and authorities committed to sustainability.
+_Important for **individuals, companies** and authorities committed to sustainability.
 #### Definition of Greenhouse Gases:
 **greenhouse gases**: include carbon dioxide (CO2), methane (CH4), nitrogen oxides (N2O) and gases containing fluorine.
 #### Emission sources:
