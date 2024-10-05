@@ -16,20 +16,20 @@ _Important for **individuals, companies** and authorities committed to sustaina
  - Agricultural practices
  - Waste management
  - Types of greenhouse gas calculators
-1. ##### Individual check:
+1. **Individual check**:
 -for buildings to estimate greenhouse gas emissions.
 Prepare recommendations for life changes.
-2. ##### Business analyst:
+2. **Business analyst**:
 -Helps companies assess emissions from operations and supply chains.
 Focus on the confirmation frame.
-3. ##### Support Sectors:
+3. **Support Sectors**:
 -Good for industries like **agriculture, construction and transportation**.
 4. **National and Regional Guidelines**:
 -Used by government and non-governmental organizations for policy development and compliance.
 ### Conclusion:
 1. **Combining knowledge and action** : **GHG calculations** allow users to **reduce** their **carbon footprint**.
 2. **sustainability Guide**: Essential tools to guide sustainability efforts in all areas.
-3. **Collective Action**: Mobilize people and organizations to control and reduce greenhouse gas emissions for a better planet.
+3. **Collective Action**: Mobilize people and organizations to **control and reduce greenhouse gas emissions** for a better planet.
 # 3.PROJECT FEATURES:
 #### Features of a GHG Calculator Tracker:
 1. **User-Friendly Interface**:
