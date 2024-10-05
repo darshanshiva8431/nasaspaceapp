@@ -1,7 +1,10 @@
 # 1. Project Title 
 ### *GHG Insight*   
 # 2. Project Description 
-GHG calculator tracker is a powerful greenhouse gas (GHG) calculator designed to help users accurately measure and manage their carbon emissions. Whether you're an individual, a business, or a community organization, Carbon Tracker provides an easy-to-use platform to track your carbon footprint.
+### An introduction to greenhouse gases (GHG):
+#### *Heat trap*: ##### Greenhouse gases trap heat in the atmosphere and contribute to global warming.
+#### *Environmental impact*: Affects ecosystems, climate and human health.
+Importance of management: Important for individuals, companies and authorities committed to sustainability.
 3. Features
 4. Technologies Used
 5. Installation Instructions
