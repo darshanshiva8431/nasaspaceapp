@@ -14,7 +14,19 @@ _Important for **individuals, companies** and authorities committed to sustaina
 ###### *Combustion of fossil fuels for energy
 ###### *Industrial processes
 ###### *Agricultural practices
-###### *Waste management.
+###### *Waste management
+Types of greenhouse gas calculators
+1. Individual check:
+*for buildings to estimate greenhouse gas emissions.
+*Prepare recommendations for life changes.
+2. Business analyst:
+*Helps companies assess emissions from operations and supply chains.
+*Focus on the confirmation frame.
+3. Support Sectors:
+*Good for industries like agriculture, construction and transportation.
+4. National and Regional Guidelines:
+*Used by government and non-governmental organizations for policy development and compliance.
+
 3. Features
 4. Technologies Used
 5. Installation Instructions
