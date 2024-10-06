@@ -28,7 +28,7 @@ Focus on the confirmation frame.
 -Used by government and non-governmental organizations for policy development and compliance.
 ### Conclusion:
 1. **Combining knowledge and action** :  **GHG calculations** allow users to **reduce** their **carbon footprint**.
-2. **sustainability Guide**:  Essential tools to guide sustainability efforts in all areas.
+2. **Sustainability Guide**:  Essential tools to guide sustainability efforts in all areas.
 3. **Collective Action**:  **Mobilize people** and organizations to **control and reduce greenhouse gas emissions** for a better planet.
 # 3.PROJECT FEATURES:
 #### Features of a GHG Calculator Tracker:
