@@ -116,10 +116,19 @@ These technologies work together to create a comprehensive tool that helps users
 # 5. Installation Instructions
 ##### 1.**Clone the Repository**.
 ##### 2.  **Backend Setup**.
-##### 2.1**Install Python**
-**Ensure that Python 3.8+ is installed on your system. You can verify this by running**:
+###### 2.1**Install Python**
+###### **Ensure that Python 3.8+ is installed on your system. You can verify this by running**:
 python --version
-2.2 Create a Virtual Environment (Optional but Recommended)
+###### 2.2 Create a Virtual Environment (Optional but Recommended)
+###### Run the backend server:
+###### python app.py
+##### 3. Frontend Setup
+###### Open index.html in your browser.
+##### 4. Database Setup
+Ensure **MongoDB** is installed and running.
+To initialize the database, if a script exists:
+
+
 
    
 
