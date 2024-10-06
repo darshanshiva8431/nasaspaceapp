@@ -114,6 +114,8 @@ Focus on the confirmation frame.
 
 These technologies work together to create a comprehensive tool that helps users track their **GHG emissions** effectively.
 # 5. Installation Instructions
+1. **Clone the Repository**
+
 6. How to Use
 7. API Documentation
 8. Contributing
