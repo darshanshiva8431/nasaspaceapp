@@ -127,15 +127,6 @@ python --version
 ##### 4. Database Setup
 Ensure **MongoDB** is installed and running.
 To initialize the database, if a script exists:
+# 6. Contributing
+# 7. Team
 
-
-
-   
-
-
-6. How to Use
-7. API Documentation
-8. Contributing
-9. License
-10. Team
-11. Contact info
