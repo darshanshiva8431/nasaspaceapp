@@ -116,7 +116,7 @@ These technologies work together to create a comprehensive tool that helps users
 # 5. Installation Instructions
 ##### 1. **Clone the Repository**.
 ##### 2.  **Backend Setup**.
-###### 2.1**Install Python**
+###### 2.1 **Install Python**
 ###### **Ensure that Python 3.8+ is installed on your system. You can verify this by running**:
 python --version
 ###### 2.2 Create a Virtual Environment (Optional but Recommended)
