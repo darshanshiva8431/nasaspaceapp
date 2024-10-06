@@ -1,0 +1,1298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GHG Tracker - Home</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="App Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#dashboard">Dashboard</a></li>
+                <li><a href="#report">Report</a></li>
+                <li><a href="#calculation">Calculation</a></li>
+                <li><a href="#alerts">Alerts</a></li>
+                <li><a href="#achievements">Achievements</a></li>
+                <li><a href="#resources">Resources</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <!-- Main Content Section -->
+    <main>
+        <section class="hero">
+            <h1>INSIGHT GHG</h1>
+            <p>It provides a comprehensive solution for understanding and managing your carbon footprint, helping you achieve sustainability goals and meet regulatory requirements.</p>
+            <div class="image-gallery">
+                <img src="image1.jpg" alt="Image 1">
+                <img src="image2.jpg" alt="Image 2">
+                <img src="image3.jpg" alt="Image 3">
+                <img src="image4.jpg" alt="Image 4">
+            </div>
+            <a href="#get-started" class="button">Get Started ➔</a>
+        </section>
+    </main>
+</body>
+</html>
+<!-- Sign In Page Section -->
+<section id="get-started" class="sign-in">
+    <h2>Sign In</h2>
+    <div class="sign-in-options">
+        <div class="option">
+            <h3>Personal Users</h3>
+            <a href="personal-signin.html" class="button">Sign In as Personal User</a>
+        </div>
+        <div class="option">
+            <h3>Students</h3>
+            <a href="student-signin.html" class="button">Sign In as Student</a>
+        </div>
+        <div class="option">
+            <h3>Industrialists</h3>
+            <a href="industrial-signin.html" class="button">Sign In as Industrialist</a>
+        </div>
+    </div>
+</section>
+
+<style>
+    .sign-in {
+        padding: 20px;
+        background-color: #f9f9f9;
+        text-align: center;
+    }
+    .sign-in-options {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 20px;
+    }
+    .option {
+        flex: 1;
+        margin: 0 10px;
+    }
+    .option h3 {
+        margin-bottom: 10px;
+    }
+    .button {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 5px;
+    }
+    .button:hover {
+        background-color: #0056b3;
+    }
+</style>
+<!-- Dashboard Page Section -->
+<section id="dashboard" class="dashboard">
+    <header class="dashboard-header">
+        <div class="logo">
+            <img src="logo.png" alt="App Logo">
+        </div>
+        <nav class="dashboard-nav">
+            <ul>
+                <li><a href="#dashboard">Dashboard</a></li>
+                <li><a href="#reports">Reports</a></li>
+                <li><a href="#tips">Tips</a></li>
+                <li><a href="#groups">Groups</a></li>
+                <li><a href="#settings">Settings</a></li>
+                <li><a href="#profile">Profile</a></li>
+            </ul>
+        </nav>
+        <div class="user-profile">
+            <img src="user-profile.png" alt="User Profile">
+            <span class="notifications">3</span>
+        </div>
+    </header>
+    <aside class="sidebar">
+        <ul>
+            <li><a href="#dashboard">Dashboard</a></li>
+            <li><a href="#reports">Reports</a></li>
+            <li><a href="#tips">Tips</a></li>
+            <li><a href="#groups">Groups</a></li>
+            <li><a href="#settings">Settings</a></li>
+            <li><a href="#profile">Profile</a></li>
+        </ul>
+    </aside>
+    <main class="main-content">
+        <section class="charts">
+            <h2>GHG Emissions Overview</h2>
+            <canvas id="emissionsChart"></canvas>
+        </section>
+        <section class="real-time-data">
+            <h2>Real-Time Data</h2>
+            <div id="realTimeUpdates"></div>
+        </section>
+        <section class="reports">
+            <h2>Reports and Summaries</h2>
+            <article class="report">
+                <h3>Monthly Report</h3>
+                <p>Detailed report on your GHG emissions for the month.</p>
+            </article>
+            <article class="report">
+                <h3>Yearly Summary</h3>
+                <p>Summary of your GHG emissions for the year.</p>
+            </article>
+        </section>
+        <section class="tips">
+            <h2>Tips and Recommendations</h2>
+            <p>Personalized suggestions for reducing your GHG emissions.</p>
+        </section>
+        <section class="challenges">
+            <h2>Challenges and Gamification</h2>
+            <p>Engage with daily challenges and earn badges.</p>
+        </section>
+    </main>
+    <footer class="dashboard-footer">
+        <p>&copy; 2023 GHG Tracker. All rights reserved.</p>
+        <nav>
+            <ul>
+                <li><a href="#terms">Terms of Service</a></li>
+                <li><a href="#privacy">Privacy Policy</a></li>
+            </ul>
+        </nav>
+    </footer>
+</section>
+
+<style>
+    .dashboard-header, .dashboard-footer {
+        background-color: #333;
+        color: #fff;
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .dashboard-nav ul, .sidebar ul, .dashboard-footer nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+    }
+    .dashboard-nav ul li, .sidebar ul li, .dashboard-footer nav ul li {
+        margin-right: 20px;
+    }
+    .dashboard-nav ul li a, .sidebar ul li a, .dashboard-footer nav ul li a {
+        color: #fff;
+        text-decoration: none;
+    }
+    .sidebar {
+        background-color: #f4f4f4;
+        padding: 20px;
+        width: 200px;
+        float: left;
+    }
+    .main-content {
+        margin-left: 220px;
+        padding: 20px;
+    }
+    .charts, .real-time-data, .reports, .tips, .challenges {
+        margin-bottom: 20px;
+    }
+    .report {
+        background-color: #e9e9e9;
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+</style>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+    const ctx = document.getElementById('emissionsChart').getContext('2d');
+    const emissionsChart = new Chart(ctx, {
+        type: 'line',
+        data: {
+            labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+            datasets: [{
+                label: 'GHG Emissions',
+                data: [12, 19, 3, 5, 2, 3, 7],
+                backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                borderColor: 'rgba(75, 192, 192, 1)',
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                y: {
+                    beginAtZero: true
+                }
+            }
+        }
+    });
+
+    // Real-time data updates simulation
+    setInterval(() => {
+        document.getElementById('realTimeUpdates').innerText = `Real-time data updated at ${new Date().toLocaleTimeString()}`;
+    }, 1000);
+</script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Hide the sign-in and dashboard sections initially
+        document.querySelector('.sign-in').style.display = 'none';
+        document.querySelector('.dashboard').style.display = 'none';
+
+        // Show sign-in section when "Get Started" button is clicked
+        document.querySelector('.button').addEventListener('click', function(event) {
+            event.preventDefault();
+            document.querySelector('.sign-in').style.display = 'block';
+            document.querySelector('.dashboard').style.display = 'none';
+        });
+
+        // Show dashboard section when "Dashboard" link is clicked
+        document.querySelectorAll('nav ul li a').forEach(function(link) {
+            link.addEventListener('click', function(event) {
+                if (this.getAttribute('href') === '#dashboard') {
+                    event.preventDefault();
+                    document.querySelector('.dashboard').style.display = 'block';
+                    document.querySelector('.sign-in').style.display = 'none';
+                }
+            });
+        });
+    });
+</script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Hide the sign-in and dashboard sections initially
+        document.querySelector('.sign-in').style.display = 'none';
+        document.querySelector('.dashboard').style.display = 'none';
+
+        // Show sign-in section when "Get Started" button is clicked
+        document.querySelector('.button').addEventListener('click', function(event) {
+            event.preventDefault();
+            document.querySelector('.sign-in').style.display = 'block';
+            document.querySelector('.dashboard').style.display = 'none';
+        });
+
+        // Show dashboard section when "Dashboard" link is clicked
+        document.querySelectorAll('nav ul li a').forEach(function(link) {
+            link.addEventListener('click', function(event) {
+                if (this.getAttribute('href') === '#dashboard') {
+                    event.preventDefault();
+                    document.querySelector('.dashboard').style.display = 'block';
+                    document.querySelector('.sign-in').style.display = 'none';
+                    document.querySelectorAll('nav ul li a').forEach(function(navLink) {
+                        navLink.style.textDecoration = 'none';
+                    });
+                    this.style.textDecoration = 'underline';
+                }
+            });
+        });
+    });
+</script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Hide the sign-in and dashboard sections initially
+        document.querySelector('.sign-in').style.display = 'none';
+        document.querySelector('.dashboard').style.display = 'none';
+
+        // Show dashboard section when "Dashboard" link is clicked
+        document.querySelectorAll('nav ul li a').forEach(function(link) {
+            link.addEventListener('click', function(event) {
+                if (this.getAttribute('href') === '#dashboard') {
+                    event.preventDefault();
+                    document.querySelector('.dashboard').style.display = 'block';
+                    document.querySelector('.sign-in').style.display = 'none';
+                    document.querySelector('main').style.display = 'none';
+                    document.querySelectorAll('nav ul li a').forEach(function(navLink) {
+                        navLink.style.textDecoration = 'none';
+                    });
+                    this.style.textDecoration = 'underline';
+                }
+            });
+        });
+    });
+</script></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Hide the sign-in and dashboard sections initially
+        document.querySelector('.sign-in').style.display = 'none';
+        document.querySelector('.dashboard').style.display = 'none';
+
+        // Show sign-in section when "Get Started" button is clicked
+        document.querySelector('.button').addEventListener('click', function(event) {
+            event.preventDefault();
+            document.querySelector('.sign-in').style.display = 'block';
+            document.querySelector('.dashboard').style.display = 'none';
+        });
+
+        // Show dashboard section when "Dashboard" link is clicked
+        document.querySelectorAll('nav ul li a').forEach(function(link) {
+            link.addEventListener('click', function(event) {
+                if (this.getAttribute('href') === '#dashboard') {
+                    event.preventDefault();
+                    document.querySelector('.dashboard').style.display = 'block';
+                    document.querySelector('.sign-in').style.display = 'none';
+                    document.querySelector('main').style.display = 'none';
+                    document.querySelectorAll('nav ul li a').forEach(function(navLink) {
+                        navLink.style.textDecoration = 'none';
+                    });
+                    this.style.textDecoration = 'underline';
+                                        document.querySelector('.dashboard-header').style.display = 'none';
+                                    }
+                                });
+                            });
+                        });
+                    </script>
+                    <!-- Detailed GHG Reports Page Section -->
+                    <section id="report" class="report-page">
+                        <header class="report-header">
+                            <div class="logo">
+                                <img src="logo.png" alt="App Logo">
+                            </div>
+                            <nav class="report-nav">
+                                <ul>
+                                    <li><a href="#home">Home</a></li>
+                                    <li><a href="#dashboard">Dashboard</a></li>
+                                    <li><a href="#report" style="text-decoration: underline;">Report</a></li>
+                                    <li><a href="#calculation">Calculation</a></li>
+                                    <li><a href="#alerts">Alerts</a></li>
+                                    <li><a href="#achievements">Achievements</a></li>
+                                    <li><a href="#resources">Resources</a></li>
+                                </ul>
+                            </nav>
+                        </header>
+                        <main class="report-content">
+                            <section class="report-sections">
+                                <h2>Emission Data</h2>
+                                <article class="report-detail">
+                                    <h3>Energy Usage</h3>
+                                    <p>Detailed information on GHG emissions from energy usage.</p>
+                                </article>
+                                <article class="report-detail">
+                                    <h3>Transportation</h3>
+                                    <p>Detailed information on GHG emissions from transportation.</p>
+                                </article>
+                                <article class="report-detail">
+                                    <h3>Waste Management</h3>
+                                    <p>Detailed information on GHG emissions from waste management.</p>
+                                </article>
+                            </section>
+                            <section class="comparison-charts">
+                                <h2>Comparison Charts</h2>
+                                <canvas id="comparisonChart"></canvas>
+                            </section>
+                            <section class="personalized-tips">
+                                <h2>Personalized Tips</h2>
+                                <p>Suggestions on how to reduce emissions based on the report.</p>
+                            </section>
+                            <section class="export-options">
+                                <h2>Export/Download Options</h2>
+                                <button class="button" onclick="exportReport('pdf')">Download PDF</button>
+                                <button class="button" onclick="exportReport('excel')">Download Excel</button>
+                            </section>
+                        </main>
+                        <footer class="report-footer">
+                            <p>&copy; 2023 GHG Tracker. All rights reserved.</p>
+                            <nav>
+                                <ul>
+                                    <li><a href="#terms">Terms of Service</a></li>
+                                    <li><a href="#privacy">Privacy Policy</a></li>
+                                    <li><a href="#contact">Contact Us</a></li>
+                                </ul>
+                            </nav>
+                        </footer>
+                    </section>
+
+                    <style>
+                        .report-page {
+                            display: none;
+                        }
+                        .report-header, .report-footer {
+                            background-color: #333;
+                            color: #fff;
+                            padding: 10px;
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                        }
+                        .report-nav ul, .report-footer nav ul {
+                            list-style: none;
+                            padding: 0;
+                            margin: 0;
+                            display: flex;
+                        }
+                        .report-nav ul li, .report-footer nav ul li {
+                            margin-right: 20px;
+                        }
+                        .report-nav ul li a, .report-footer nav ul li a {
+                            color: #fff;
+                            text-decoration: none;
+                        }
+                        .report-content {
+                            padding: 20px;
+                        }
+                        .report-sections, .comparison-charts, .personalized-tips, .export-options {
+                            margin-bottom: 20px;
+                        }
+                        .report-detail {
+                            background-color: #e9e9e9;
+                            padding: 10px;
+                            margin-bottom: 10px;
+                        }
+                        .button {
+                            display: inline-block;
+                            padding: 10px 20px;
+                            background-color: #007bff;
+                            color: #fff;
+                            text-decoration: none;
+                            border-radius: 5px;
+                            margin-right: 10px;
+                        }
+                        .button:hover {
+                            background-color: #0056b3;
+                        }
+                    </style>
+
+                    <script>
+                        const comparisonCtx = document.getElementById('comparisonChart').getContext('2d');
+                        const comparisonChart = new Chart(comparisonCtx, {
+                            type: 'bar',
+                            data: {
+                                labels: ['Energy', 'Transportation', 'Waste'],
+                                datasets: [{
+                                    label: 'Your Emissions',
+                                    data: [30, 20, 10],
+                                    backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                                    borderColor: 'rgba(75, 192, 192, 1)',
+                                    borderWidth: 1
+                                }, {
+                                    label: 'Industry Average',
+                                    data: [25, 15, 5],
+                                    backgroundColor: 'rgba(153, 102, 255, 0.2)',
+                                    borderColor: 'rgba(153, 102, 255, 1)',
+                                    borderWidth: 1
+                                }]
+                            },
+                            options: {
+                                scales: {
+                                    y: {
+                                        beginAtZero: true
+                                    }
+                                }
+                            }
+                        });
+
+                        function exportReport(format) {
+                            alert(`Exporting report as ${format.toUpperCase()}`);
+                        }
+
+                        document.addEventListener('DOMContentLoaded', function() {
+                            document.querySelectorAll('nav ul li a').forEach(function(link) {
+                                link.addEventListener('click', function(event) {
+                                    if (this.getAttribute('href') === '#report') {
+                                        event.preventDefault();
+                                        document.querySelector('.report-page').style.display = 'block';
+                                        document.querySelector('.dashboard').style.display = 'none';
+                                        document.querySelector('.sign-in').style.display = 'none';
+                                        document.querySelector('main').style.display = 'none';
+                                        document.querySelectorAll('nav ul li a').forEach(function(navLink) {
+                                            navLink.style.textDecoration = 'none';
+                                        });
+                                        this.style.textDecoration = 'underline';
+                                    }
+                                });
+                            });
+                        });
+                    </script>
+                    <script>
+                        document.addEventListener('DOMContentLoaded', function() {
+                            document.querySelectorAll('nav ul li a').forEach(function(link) {
+                                link.addEventListener('click', function(event) {
+                                    if (this.getAttribute('href') === '#report') {
+                                        event.preventDefault();
+                                        document.querySelector('.report-page').style.display = 'block';
+                                        document.querySelector('.dashboard').style.display = 'none';
+                                        document.querySelector('.sign-in').style.display = 'none';
+                                        document.querySelector('main').style.display = 'none';
+                                        document.querySelector('.report-header').style.display = 'none';
+                                        document.querySelectorAll('nav ul li a').forEach(function(navLink) {
+                                            navLink.style.textDecoration = 'none';
+                                        });
+                                        this.style.textDecoration = 'underline';
+                                    }
+                                });
+                            });
+                        });
+                    </script>
+                    <script>
+                        document.addEventListener('DOMContentLoaded', function() {
+                            // Hide the sign-in, dashboard, and report sections initially
+                            document.querySelector('.sign-in').style.display = 'none';
+                            document.querySelector('.dashboard').style.display = 'none';
+                            document.querySelector('.report-page').style.display = 'none';
+
+                            // Show main section when "Home" link is clicked
+                            document.querySelectorAll('nav ul li a').forEach(function(link) {
+                                link.addEventListener('click', function(event) {
+                                    if (this.getAttribute('href') === '#home') {
+                                        event.preventDefault();
+                                        document.querySelector('main').style.display = 'block';
+                                        document.querySelector('.sign-in').style.display = 'none';
+                                        document.querySelector('.dashboard').style.display = 'none';
+                                        document.querySelector('.report-page').style.display = 'none';
+                                        document.querySelectorAll('nav ul li a').forEach(function(navLink) {
+                                            navLink.style.textDecoration = 'none';
+                                        });
+                                        this.style.textDecoration = 'underline';
+                                    }
+                                });
+                            });
+                        });
+                    </script>
+                    <!-- Calculation Page Section -->
+                    <section id="calculation" class="calculation-page">
+                        <main class="calculation-content">
+                            <section class="introduction">
+                                <h2>GHG Calculator</h2>
+                                <p>Use this calculator to estimate your greenhouse gas emissions and find ways to reduce them.</p>
+                            </section>
+                            <section class="calculator-tabs">
+                                <button class="tab-button" onclick="showTab('individual')">Individual</button>
+                                <button class="tab-button" onclick="showTab('industrial')">Industrial</button>
+                            </section>
+                            <section id="individual" class="calculator-form">
+                                <h3>Individual Requirement Form</h3>
+                                <form>
+                                    <fieldset>
+                                        <legend>Energy Usage</legend>
+                                        <label for="electricity">Electricity (kWh):</label>
+                                        <input type="number" id="electricity" name="electricity">
+                                        <label for="gas">Gas (therms):</label>
+                                        <input type="number" id="gas" name="gas">
+                                    </fieldset>
+                                    <fieldset>
+                                        <legend>Transportation</legend>
+                                        <label for="vehicle">Vehicle (miles):</label>
+                                        <input type="number" id="vehicle" name="vehicle">
+                                        <label for="public-transport">Public Transport (miles):</label>
+                                        <input type="number" id="public-transport" name="public-transport">
+                                    </fieldset>
+                                    <fieldset>
+                                        <legend>Waste Management</legend>
+                                        <label for="waste">Waste (lbs):</label>
+                                        <input type="number" id="waste" name="waste">
+                                    </fieldset>
+                                    <button type="button" onclick="calculateIndividualEmissions()">Calculate Individual Emissions</button>
+                                </form>
+                                <div id="individual-results" class="results"></div>
+                            </section>
+                            <section id="industrial" class="calculator-form" style="display:none;">
+                                <h3>Industrial Requirement Form</h3>
+                                <form>
+                                    <fieldset>
+                                        <legend>Energy Usage</legend>
+                                        <label for="industrial-electricity">Electricity (kWh):</label>
+                                        <input type="number" id="industrial-electricity" name="industrial-electricity">
+                                        <label for="industrial-gas">Gas (therms):</label>
+                                        <input type="number" id="industrial-gas" name="industrial-gas">
+                                    </fieldset>
+                                    <fieldset>
+                                        <legend>Transportation</legend>
+                                        <label for="fleet">Fleet (miles):</label>
+                                        <input type="number" id="fleet" name="fleet">
+                                        <label for="logistics">Logistics (miles):</label>
+                                        <input type="number" id="logistics" name="logistics">
+                                    </fieldset>
+                                    <fieldset>
+                                        <legend>Production Processes</legend>
+                                        <label for="production">Production Emissions (tons):</label>
+                                        <input type="number" id="production" name="production">
+                                    </fieldset>
+                                    <fieldset>
+                                        <legend>Waste Management</legend>
+                                        <label for="industrial-waste">Waste (tons):</label>
+                                        <input type="number" id="industrial-waste" name="industrial-waste">
+                                    </fieldset>
+                                    <button type="button" onclick="calculateIndustrialEmissions()">Calculate Industrial Emissions</button>
+                                </form>
+                                <div id="industrial-results" class="results"></div>
+                            </section>
+                        </main>
+                        <footer class="calculation-footer">
+                            <p>&copy; 2023 GHG Tracker. All rights reserved.</p>
+                            <nav>
+                                <ul>
+                                    <li><a href="#terms">Terms of Service</a></li>
+                                    <li><a href="#privacy">Privacy Policy</a></li>
+                                    <li><a href="#contact">Contact Us</a></li>
+                                </ul>
+                            </nav>
+                        </footer>
+                    </section>
+
+                    <style>
+                        .calculation-page {
+                            display: none;
+                        }
+                        .calculation-content {
+                            padding: 20px;
+                        }
+                        .calculator-tabs {
+                            margin-bottom: 20px;
+                        }
+                        .tab-button {
+                            padding: 10px 20px;
+                            background-color: #007bff;
+                            color: #fff;
+                            border: none;
+                            cursor: pointer;
+                            margin-right: 10px;
+                        }
+                        .tab-button:hover {
+                            background-color: #0056b3;
+                        }
+                        .calculator-form {
+                            margin-bottom: 20px;
+                        }
+                        .calculator-form fieldset {
+                            margin-bottom: 20px;
+                            padding: 10px;
+                            border: 1px solid #ccc;
+                        }
+                        .calculator-form label {
+                            display: block;
+                            margin-bottom: 5px;
+                        }
+                        .calculator-form input {
+                            width: 100%;
+                            padding: 8px;
+                            margin-bottom: 10px;
+                        }
+                        .results {
+                            margin-top: 20px;
+                            padding: 10px;
+                            background-color: #e9e9e9;
+                        }
+                        .calculation-footer {
+                            background-color: #333;
+                            color: #fff;
+                            padding: 10px;
+                            text-align: center;
+                        }
+                        .calculation-footer nav ul {
+                            list-style: none;
+                            padding: 0;
+                            margin: 0;
+                            display: flex;
+                            justify-content: center;
+                        }
+                        .calculation-footer nav ul li {
+                            margin-right: 20px;
+                        }
+                        .calculation-footer nav ul li a {
+                            color: #fff;
+                            text-decoration: none;
+                        }
+                    </style>
+
+                    <script>
+                        function showTab(tab) {
+                            document.getElementById('individual').style.display = tab === 'individual' ? 'block' : 'none';
+                            document.getElementById('industrial').style.display = tab === 'industrial' ? 'block' : 'none';
+                        }
+
+                        function calculateIndividualEmissions() {
+                            // Placeholder for individual emissions calculation logic
+                            document.getElementById('individual-results').innerText = 'Individual emissions calculated!';
+                        }
+
+                        function calculateIndustrialEmissions() {
+                            // Placeholder for industrial emissions calculation logic
+                            document.getElementById('industrial-results').innerText = 'Industrial emissions calculated!';
+                        }
+
+                        document.addEventListener('DOMContentLoaded', function() {
+                            document.querySelectorAll('nav ul li a').forEach(function(link) {
+                                link.addEventListener('click', function(event) {
+                                    if (this.getAttribute('href') === '#calculation') {
+                                        event.preventDefault();
+                                        document.querySelector('.calculation-page').style.display = 'block';
+                                        document.querySelector('.dashboard').style.display = 'none';
+                                        document.querySelector('.sign-in').style.display = 'none';
+                                        document.querySelector('main').style.display = 'none';
+                                        document.querySelectorAll('nav ul li a').forEach(function(navLink) {
+                                            navLink.style.textDecoration = 'none';
+                                        });
+                                        this.style.textDecoration = 'underline';
+                                    }
+                                });
+                            });
+                        });
+                    </script>
+                    <!-- Real-Time Alerts Page Section -->
+                    <section id="alerts" class="alerts-page">
+                        <main class="alerts-content">
+                            <section class="alert-list">
+                                <h2>Recent Alerts</h2>
+                                <div class="filter-options">
+                                    <label for="alert-type">Filter by Type:</label>
+                                    <select id="alert-type">
+                                        <option value="all">All</option>
+                                        <option value="high-emissions">High Emissions</option>
+                                        <option value="regulations">Upcoming Regulations</option>
+                                    </select>
+                                </div>
+                                <article class="alert">
+                                    <h3>High Emissions Detected</h3>
+                                    <time datetime="2023-10-01T12:00">October 1, 2023, 12:00 PM</time>
+                                    <p>High levels of emissions detected in your area. Consider reducing energy usage.</p>
+                                    <button class="details-button">View Details</button>
+                                    <div class="alert-details" style="display: none;">
+                                        <p>Details about the alert and recommended actions.</p>
+                                    </div>
+                                </article>
+                                <!-- More alerts can be added here -->
+                            </section>
+                            <section class="tips-section">
+                                <h2>Daily Tips</h2>
+                                <article class="tip">
+                                    <h3>Reduce Energy Usage</h3>
+                                    <p>Turn off lights and unplug devices when not in use to save energy.</p>
+                                </article>
+                                <!-- More tips can be added here -->
+                            </section>
+                        </main>
+                        <footer class="alerts-footer">
+                            <p>&copy; 2023 GHG Tracker. All rights reserved.</p>
+                            <nav>
+                                <ul>
+                                    <li><a href="#terms">Terms of Service</a></li>
+                                    <li><a href="#privacy">Privacy Policy</a></li>
+                                    <li><a href="#contact">Contact Us</a></li>
+                                </ul>
+                            </nav>
+                        </footer>
+                    </section>
+
+                    <style>
+                        .alerts-page {
+                            display: none;
+                        }
+                        .alerts-content {
+                            padding: 20px;
+                        }
+                        .alert-list, .tips-section {
+                            margin-bottom: 20px;
+                        }
+                        .alert {
+                            background-color: #e9e9e9;
+                            padding: 10px;
+                            margin-bottom: 10px;
+                        }
+                        .alert h3 {
+                            margin: 0;
+                        }
+                        .alert time {
+                            display: block;
+                            margin-bottom: 10px;
+                            color: #666;
+                        }
+                        .details-button {
+                            background-color: #007bff;
+                            color: #fff;
+                            border: none;
+                            padding: 5px 10px;
+                            cursor: pointer;
+                            border-radius: 5px;
+                        }
+                        .details-button:hover {
+                            background-color: #0056b3;
+                        }
+                        .tips-section .tip {
+                            background-color: #f9f9f9;
+                            padding: 10px;
+                            margin-bottom: 10px;
+                        }
+                        .alerts-footer {
+                            background-color: #333;
+                            color: #fff;
+                            padding: 10px;
+                            text-align: center;
+                        }
+                        .alerts-footer nav ul {
+                            list-style: none;
+                            padding: 0;
+                            margin: 0;
+                            display: flex;
+                            justify-content: center;
+                        }
+                        .alerts-footer nav ul li {
+                            margin-right: 20px;
+                        }
+                        .alerts-footer nav ul li a {
+                            color: #fff;
+                            text-decoration: none;
+                        }
+                    </style>
+
+                    <script>
+                        document.addEventListener('DOMContentLoaded', function() {
+                            document.querySelectorAll('nav ul li a').forEach(function(link) {
+                                link.addEventListener('click', function(event) {
+                                    if (this.getAttribute('href') === '#alerts') {
+                                        event.preventDefault();
+                                        document.querySelector('.alerts-page').style.display = 'block';
+                                        document.querySelector('.dashboard').style.display = 'none';
+                                        document.querySelector('.sign-in').style.display = 'none';
+                                        document.querySelector('main').style.display = 'none';
+                                        document.querySelectorAll('nav ul li a').forEach(function(navLink) {
+                                            navLink.style.textDecoration = 'none';
+                                        });
+                                        this.style.textDecoration = 'underline';
+                                    }
+                                });
+                            });
+
+                            document.querySelectorAll('.details-button').forEach(function(button) {
+                                button.addEventListener('click', function() {
+                                    const details = this.nextElementSibling;
+                                    details.style.display = details.style.display === 'none' ? 'block' : 'none';
+                                });
+                            });
+                        });
+                    </script>
+                    <!-- Achievements Page Section -->
+                    <section id="achievements" class="achievements-page">
+                        <aside class="sidebar">
+                            <ul>
+                                <li><a href="#home">Home</a></li>
+                                <li><a href="#dashboard">Dashboard</a></li>
+                                <li><a href="#report">Report</a></li>
+                                <li><a href="#calculation">Calculation</a></li>
+                                <li><a href="#alerts">Alerts</a></li>
+                                <li><a href="#achievements" style="text-decoration: underline;">Achievements</a></li>
+                                <li><a href="#resources">Resources</a></li>
+                            </ul>
+                        </aside>
+                        <main class="main-content">
+                            <section class="achievements-section">
+                                <h2>User Achievements</h2>
+                                <article class="achievement">
+                                    <h3>Eco-Warrior Badge</h3>
+                                    <p>Earned for reducing carbon footprint by 20%.</p>
+                                </article>
+                                <article class="achievement">
+                                    <h3>Carbon Reducer Badge</h3>
+                                    <p>Earned for consistent reduction in emissions over 6 months.</p>
+                                </article>
+                                <div class="progress-tracker">
+                                    <h3>Progress Tracker</h3>
+                                    <progress value="70" max="100"></progress>
+                                    <p>70% towards the next level</p>
+                                </div>
+                            </section>
+                            <section class="comparison-section">
+                                <h2>Comparison</h2>
+                                <div class="filter-options">
+                                    <label for="comparison-metric">Filter by:</label>
+                                    <select id="comparison-metric">
+                                        <option value="time-period">Time Period</option>
+                                        <option value="emission-type">Emission Type</option>
+                                    </select>
+                                </div>
+                                <canvas id="comparisonGraph"></canvas>
+                                <div class="leaderboard">
+                                    <h3>Leaderboard</h3>
+                                    <ol>
+                                        <li>User A - 50 points</li>
+                                        <li>User B - 45 points</li>
+                                        <li>User C - 40 points</li>
+                                    </ol>
+                                </div>
+                            </section>
+                        </main>
+                        <footer class="achievements-footer">
+                            <p>&copy; 2023 GHG Tracker. All rights reserved.</p>
+                            <nav>
+                                <ul>
+                                    <li><a href="#terms">Terms of Service</a></li>
+                                    <li><a href="#privacy">Privacy Policy</a></li>
+                                    <li><a href="#contact">Contact Us</a></li>
+                                </ul>
+                            </nav>
+                        </footer>
+                    </section>
+
+                    <style>
+                        .achievements-page {
+                            display: none;
+                        }
+                        .sidebar {
+                            background-color: #f4f4f4;
+                            padding: 20px;
+                            width: 200px;
+                            float: left;
+                        }
+                        .main-content {
+                            margin-left: 220px;
+                            padding: 20px;
+                        }
+                        .achievements-section, .comparison-section {
+                            margin-bottom: 20px;
+                        }
+                        .achievement {
+                            background-color: #e9e9e9;
+                            padding: 10px;
+                            margin-bottom: 10px;
+                        }
+                        .progress-tracker {
+                            margin-top: 20px;
+                        }
+                        .comparison-section .filter-options {
+                            margin-bottom: 20px;
+                        }
+                        .leaderboard {
+                            margin-top: 20px;
+                        }
+                        .achievements-footer {
+                            background-color: #333;
+                            color: #fff;
+                            padding: 10px;
+                            text-align: center;
+                        }
+                        .achievements-footer nav ul {
+                            list-style: none;
+                            padding: 0;
+                            margin: 0;
+                            display: flex;
+                            justify-content: center;
+                        }
+                        .achievements-footer nav ul li {
+                            margin-right: 20px;
+                        }
+                        .achievements-footer nav ul li a {
+                            color: #fff;
+                            text-decoration: none;
+                        }
+                    </style>
+
+                    <script>
+                        document.addEventListener('DOMContentLoaded', function() {
+                            document.querySelectorAll('nav ul li a').forEach(function(link) {
+                                link.addEventListener('click', function(event) {
+                                    if (this.getAttribute('href') === '#achievements') {
+                                        event.preventDefault();
+                                        document.querySelector('.achievements-page').style.display = 'block';
+                                        document.querySelector('.dashboard').style.display = 'none';
+                                        document.querySelector('.sign-in').style.display = 'none';
+                                        document.querySelector('main').style.display = 'none';
+                                        document.querySelectorAll('nav ul li a').forEach(function(navLink) {
+                                            navLink.style.textDecoration = 'none';
+                                        });
+                                        this.style.textDecoration = 'underline';
+                                    }
+                                });
+                            });
+
+                            const comparisonCtx = document.getElementById('comparisonGraph').getContext('2d');
+                            const comparisonGraph = new Chart(comparisonCtx, {
+                                type: 'bar',
+                                data: {
+                                    labels: ['You', 'Friend A', 'Friend B', 'Industry Average'],
+                                    datasets: [{
+                                        label: 'GHG Emissions',
+                                        data: [10, 8, 12, 15],
+                                        backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                                        borderColor: 'rgba(75, 192, 192, 1)',
+                                        borderWidth: 1
+                                    }]
+                                },
+                                options: {
+                                    scales: {
+                                        y: {
+                                            beginAtZero: true
+                                        }
+                                    }
+                                }
+                            });
+                        });
+                    </script>
+                    <script>
+                        document.addEventListener('DOMContentLoaded', function() {
+                            // Hide the sign-in, dashboard, report, calculation, alerts, and achievements sections initially
+                            document.querySelector('.sign-in').style.display = 'none';
+                            document.querySelector('.dashboard').style.display = 'none';
+                            document.querySelector('.report-page').style.display = 'none';
+                            document.querySelector('.calculation-page').style.display = 'none';
+                            document.querySelector('.alerts-page').style.display = 'none';
+                            document.querySelector('.achievements-page').style.display = 'none';
+
+                            // Show main section when "Home" link is clicked
+                            document.querySelectorAll('nav ul li a').forEach(function(link) {
+                                link.addEventListener('click', function(event) {
+                                    if (this.getAttribute('href') === '#home') {
+                                        event.preventDefault();
+                                        document.querySelector('main').style.display = 'block';
+                                        document.querySelector('.sign-in').style.display = 'none';
+                                        document.querySelector('.dashboard').style.display = 'none';
+                                        document.querySelector('.report-page').style.display = 'none';
+                                        document.querySelector('.calculation-page').style.display = 'none';
+                                        document.querySelector('.alerts-page').style.display = 'none';
+                                        document.querySelector('.achievements-page').style.display = 'none';
+                                        document.querySelectorAll('nav ul li a').forEach(function(navLink) {
+                                            navLink.style.textDecoration = 'none';
+                                        });
+                                        this.style.textDecoration = 'underline';
+                                    }
+                                });
+                            });
+
+                            // Show achievements section when "Achievements" link is clicked
+                            document.querySelectorAll('nav ul li a').forEach(function(link) {
+                                link.addEventListener('click', function(event) {
+                                    if (this.getAttribute('href') === '#achievements') {
+                                        event.preventDefault();
+                                        document.querySelector('.achievements-page').style.display = 'block';
+                                        document.querySelector('.dashboard').style.display = 'none';
+                                        document.querySelector('.sign-in').style.display = 'none';
+                                        document.querySelector('main').style.display = 'none';
+                                        document.querySelector('.report-page').style.display = 'none';
+                                        document.querySelector('.calculation-page').style.display = 'none';
+                                        document.querySelector('.alerts-page').style.display = 'none';
+                                        document.querySelector('.achievements-page .report-header').style.display = 'none';
+                                        document.querySelectorAll('nav ul li a').forEach(function(navLink) {
+                                            navLink.style.textDecoration = 'none';
+                                        });
+                                        this.style.textDecoration = 'underline';
+                                    }
+                                });
+                            });
+                        });
+                    </script>
+                    <script>
+                        document.addEventListener('DOMContentLoaded', function() {
+                            // Hide the sign-in, dashboard, report, calculation, alerts, and achievements sections initially
+                            document.querySelector('.sign-in').style.display = 'none';
+                            document.querySelector('.dashboard').style.display = 'none';
+                            document.querySelector('.report-page').style.display = 'none';
+                            document.querySelector('.calculation-page').style.display = 'none';
+                            document.querySelector('.alerts-page').style.display = 'none';
+                            document.querySelector('.achievements-page').style.display = 'none';
+
+                            // Show main section when "Home" link is clicked
+                            document.querySelectorAll('nav ul li a').forEach(function(link) {
+                                link.addEventListener('click', function(event) {
+                                    if (this.getAttribute('href') === '#home') {
+                                        event.preventDefault();
+                                        document.querySelector('main').style.display = 'block';
+                                        document.querySelector('.sign-in').style.display = 'none';
+                                        document.querySelector('.dashboard').style.display = 'none';
+                                        document.querySelector('.report-page').style.display = 'none';
+                                        document.querySelector('.calculation-page').style.display = 'none';
+                                        document.querySelector('.alerts-page').style.display = 'none';
+                                        document.querySelector('.achievements-page').style.display = 'none';
+                                        document.querySelectorAll('nav ul li a').forEach(function(navLink) {
+                                            navLink.style.textDecoration = 'none';
+                                        });
+                                        this.style.textDecoration = 'underline';
+                                    }
+                                });
+                            });
+
+                            // Show achievements section when "Achievements" link is clicked
+                            document.querySelectorAll('nav ul li a').forEach(function(link) {
+                                link.addEventListener('click', function(event) {
+                                    if (this.getAttribute('href') === '#achievements') {
+                                        event.preventDefault();
+                                        document.querySelector('.achievements-page').style.display = 'block';
+                                        document.querySelector('.dashboard').style.display = 'none';
+                                        document.querySelector('.sign-in').style.display = 'none';
+                                        document.querySelector('main').style.display = 'none';
+                                        document.querySelector('.report-page').style.display = 'none';
+                                        document.querySelector('.calculation-page').style.display = 'none';
+                                        document.querySelector('.alerts-page').style.display = 'none';
+                                        document.querySelector('.achievements-page .report-header').style.display = 'none';
+                                        document.querySelectorAll('nav ul li a').forEach(function(navLink) {
+                                            navLink.style.textDecoration = 'none';
+                                        });
+                                        this.style.textDecoration = 'underline';
+                                    }
+                                });
+                            });
+                        });
+                    </script>
+                    <!-- Resources Page Section -->
+                    <section id="resources" class="resources-page">
+                        <main class="resources-content">
+                            <section class="introduction">
+                                <h2>Resources</h2>
+                                <p>Explore valuable resources contributed by students and industries to help reduce GHG emissions.</p>
+                            </section>
+                            <section class="student-contributions">
+                                <h3>Student Research and Projects</h3>
+                                <form class="upload-form">
+                                    <label for="student-title">Title:</label>
+                                    <input type="text" id="student-title" name="student-title" required>
+                                    <label for="student-description">Description:</label>
+                                    <textarea id="student-description" name="student-description" required></textarea>
+                                    <label for="student-file">Upload File:</label>
+                                    <input type="file" id="student-file" name="student-file" required>
+                                    <button type="submit">Submit</button>
+                                </form>
+                                <div class="student-submissions">
+                                    <article class="submission">
+                                        <h4>Project Title</h4>
+                                        <p>Brief description of the project.</p>
+                                        <a href="#">Download</a>
+                                    </article>
+                                    <!-- More submissions can be added here -->
+                                </div>
+                            </section>
+                            <section class="industrial-achievements">
+                                <h3>Industry Achievements and Blogs</h3>
+                                <form class="upload-form">
+                                    <label for="industry-title">Title:</label>
+                                    <input type="text" id="industry-title" name="industry-title" required>
+                                    <label for="industry-description">Description:</label>
+                                    <textarea id="industry-description" name="industry-description" required></textarea>
+                                    <label for="industry-file">Upload File:</label>
+                                    <input type="file" id="industry-file" name="industry-file" required>
+                                    <label for="industry-blog">Link to Blog:</label>
+                                    <input type="url" id="industry-blog" name="industry-blog">
+                                    <button type="submit">Submit</button>
+                                </form>
+                                <div class="industry-submissions">
+                                    <article class="submission">
+                                        <h4>Achievement Title</h4>
+                                        <p>Brief description of the achievement.</p>
+                                        <a href="#">Read Blog</a>
+                                        <a href="#">Download</a>
+                                    </article>
+                                    <!-- More submissions can be added here -->
+                                </div>
+                            </section>
+                        </main>
+                        <footer class="resources-footer">
+                            <p>&copy; 2023 GHG Tracker. All rights reserved.</p>
+                            <nav>
+                                <ul>
+                                    <li><a href="#terms">Terms of Service</a></li>
+                                    <li><a href="#privacy">Privacy Policy</a></li>
+                                    <li><a href="#contact">Contact Us</a></li>
+                                </ul>
+                            </nav>
+                        </footer>
+                    </section>
+
+                    <style>
+                        .resources-page {
+                            display: none;
+                        }
+                        .resources-content {
+                            padding: 20px;
+                        }
+                        .upload-form {
+                            margin-bottom: 20px;
+                        }
+                        .upload-form label {
+                            display: block;
+                            margin-bottom: 5px;
+                        }
+                        .upload-form input, .upload-form textarea {
+                            width: 100%;
+                            padding: 8px;
+                            margin-bottom: 10px;
+                        }
+                        .upload-form button {
+                            padding: 10px 20px;
+                            background-color: #007bff;
+                            color: #fff;
+                            border: none;
+                            cursor: pointer;
+                            border-radius: 5px;
+                        }
+                        .upload-form button:hover {
+                            background-color: #0056b3;
+                        }
+                        .submission {
+                            background-color: #e9e9e9;
+                            padding: 10px;
+                            margin-bottom: 10px;
+                        }
+                        .resources-footer {
+                            background-color: #333;
+                            color: #fff;
+                            padding: 10px;
+                            text-align: center;
+                        }
+                        .resources-footer nav ul {
+                            list-style: none;
+                            padding: 0;
+                            margin: 0;
+                            display: flex;
+                            justify-content: center;
+                        }
+                        .resources-footer nav ul li {
+                            margin-right: 20px;
+                        }
+                        .resources-footer nav ul li a {
+                            color: #fff;
+                            text-decoration: none;
+                        }
+                    </style>
+
+                    <script>
+                        document.addEventListener('DOMContentLoaded', function() {
+                            document.querySelectorAll('nav ul li a').forEach(function(link) {
+                                link.addEventListener('click', function(event) {
+                                    if (this.getAttribute('href') === '#resources') {
+                                        event.preventDefault();
+                                        document.querySelector('.resources-page').style.display = 'block';
+                                        document.querySelector('.dashboard').style.display = 'none';
+                                        document.querySelector('.sign-in').style.display = 'none';
+                                        document.querySelector('main').style.display = 'none';
+                                        document.querySelector('.report-page').style.display = 'none';
+                                        document.querySelector('.calculation-page').style.display = 'none';
+                                        document.querySelector('.alerts-page').style.display = 'none';
+                                        document.querySelector('.achievements-page').style.display = 'none';
+                                        document.querySelectorAll('nav ul li a').forEach(function(navLink) {
+                                            navLink.style.textDecoration = 'none';
+                                        });
+                                        this.style.textDecoration = 'underline';
+                                    }
+                                });
+                            });
+                        });
+                    </script>
+                    <script>
+                        document.addEventListener('DOMContentLoaded', function() {
+                            const sections = {
+                                home: document.querySelector('main'),
+                                dashboard: document.querySelector('.dashboard'),
+                                report: document.querySelector('.report-page'),
+                                calculation: document.querySelector('.calculation-page'),
+                                alerts: document.querySelector('.alerts-page'),
+                                achievements: document.querySelector('.achievements-page'),
+                                resources: document.querySelector('.resources-page')
+                            };
+
+                            function showSection(section) {
+                                Object.values(sections).forEach(sec => sec.style.display = 'none');
+                                sections[section].style.display = 'block';
+                            }
+
+                            document.querySelectorAll('nav ul li a').forEach(function(link) {
+                                link.addEventListener('click', function(event) {
+                                    const section = this.getAttribute('href').substring(1);
+                                    if (sections[section]) {
+                                        event.preventDefault();
+                                        showSection(section);
+                                        document.querySelectorAll('nav ul li a').forEach(function(navLink) {
+                                            navLink.style.textDecoration = 'none';
+                                        });
+                                        this.style.textDecoration = 'underline';
+                                    }
+                                });
+                            });
+
+                            // Initially show the home section
+                            showSection('home');
+                        });
+                    </script>
