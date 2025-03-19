@@ -1,0 +1,943 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #003300; /* Dark green background color */
+    color: white; /* White text color */
+}
+
+header {
+    display: flex;
+    justify-content: space-between; /* Align items on both ends */
+    align-items: center; /* Vertically center items */
+    padding: 20px; /* Space inside the header */
+    background-color: #004400; /* Slightly lighter green for the header */
+}
+
+.logo img {
+    width: 50px; /* Set logo width */
+    height: 50px; /* Set logo height */
+}
+
+nav ul {
+    list-style: none; /* Remove default list styling */
+    display: flex; /* Display items in a row */
+    gap: 20px; /* Space between each nav item */
+}
+
+nav a {
+    color: white; /* White text color */
+    text-decoration: none; /* Remove underline from links */
+    font-weight: bold; /* Bold text */
+}
+
+.hero {
+    text-align: center; /* Center text horizontally */
+    padding: 50px 20px; /* Space inside the hero section */
+}
+
+.hero h1 {
+    font-size: 60px; /* Large font size for the title */
+    margin: 0; /* Remove default margin */
+}
+
+.hero p {
+    font-size: 20px; /* Medium font size for the subtitle */
+    margin: 20px 0; /* Vertical margin for spacing */
+}
+
+.image-gallery {
+    display: flex; /* Display images in a row */
+    justify-content: center; /* Center images horizontally */
+    gap: 10px; /* Space between each image */
+    margin: 30px 0; /* Vertical margin for spacing */
+}
+
+.image-gallery img {
+    width: 150px; /* Set image width */
+    height: 100px; /* Set image height */
+    border-radius: 10px; /* Rounded corners for images */
+}
+
+.button {
+    display: inline-block; /* Inline block to allow padding */
+    padding: 10px 20px; /* Space inside the button */
+    background-color: #00cc00; /* Green background color */
+    color: white; /* White text color */
+    text-decoration: none; /* Remove underline from link */
+    font-size: 18px; /* Font size for button text */
+    border-radius: 5px; /* Rounded corners for button */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.button:hover {
+    background-color: #009900; /* Darker green on hover */
+}
+.sign-in-buttons {
+    display: flex; /* Display buttons in a row */
+    justify-content: center; /* Center buttons horizontally */
+    gap: 20px; /* Space between each button */
+    margin: 20px 0; /* Vertical margin for spacing */
+}
+
+.sign-in-button {
+    display: flex; /* Display icon and text in a row */
+    align-items: center; /* Vertically center items */
+    padding: 10px 20px; /* Space inside the button */
+    color: white; /* White text color */
+    text-decoration: none; /* Remove underline from link */
+    font-size: 18px; /* Font size for button text */
+    border-radius: 5px; /* Rounded corners for button */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.sign-in-button img {
+    width: 20px; /* Set icon width */
+    height: 20px; /* Set icon height */
+    margin-right: 10px; /* Space between icon and text */
+}
+
+.sign-in-button.google {
+    background-color: #db4437; /* Google red background color */
+}
+
+.sign-in-button.google:hover {
+    background-color: #c33d2e; /* Darker red on hover */
+}
+
+.sign-in-button.facebook {
+    background-color: #3b5998; /* Facebook blue background color */
+}
+
+.sign-in-button.facebook:hover {
+    background-color: #334d84; /* Darker blue on hover */
+}
+
+.sign-in-button.twitter {
+    background-color: #1da1f2; /* Twitter blue background color */
+}
+
+.sign-in-button.twitter:hover {
+    background-color: #1a91da; /* Darker blue on hover */
+}
+.dashboard {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    background-color: #004400;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.card .progress-bar {
+    background-color: #00cc00;
+    height: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.card .progress-bar div {
+    height: 100%;
+    background-color: #009900;
+    width: 50%; /* Example width, should be dynamic */
+    transition: width 0.3s ease;
+}
+
+.chart {
+    width: 100%;
+    height: 300px;
+    background-color: #003300;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.alert {
+    background-color: #ffcc00;
+    color: #333;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.alert img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+@media (max-width: 768px) {
+    .dashboard {
+        grid-template-columns: 1fr;
+    }
+}
+/* Initially hide the sign-in and dashboard sections */
+.sign-in-buttons,
+.dashboard {
+    display: none;
+}
+
+/* Show the sign-in buttons when the get-started class is added */
+.show-sign-in .sign-in-buttons {
+    display: flex;
+}
+/* Show the dashboard when the show-dashboard class is added */
+.show-dashboard .dashboard {
+    display: grid;
+}
+
+/* Underline the dashboard when it is clicked */
+.dashboard:active {
+    text-decoration: underline;
+}
+/* Hide the initial content when the dashboard is shown */
+.show-dashboard .hero,
+.show-dashboard .sign-in-buttons {
+    display: none;
+}
+
+/* Underline the dashboard when it is clicked */
+.show-dashboard .dashboard {
+    text-decoration: underline;
+}
+/* Detailed GHG Reports Page Styles */
+
+/* Color Scheme */
+:root {
+    --primary-green: #006400;
+    --secondary-green: #00cc00;
+    --contrast-color: #ffffff;
+    --background-color: #f0f0f0;
+    --text-color: #333333;
+}
+
+/* Typography */
+body {
+    font-family: 'Arial', sans-serif;
+    color: var(--text-color);
+    background-color: var(--background-color);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+    color: var(--primary-green);
+}
+
+p {
+    line-height: 1.6;
+}
+
+/* Spacing and Layout */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.section {
+    padding: 40px 0;
+}
+
+/* Buttons and Links */
+.button {
+    background-color: var(--secondary-green);
+    color: var(--contrast-color);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: var(--primary-green);
+}
+
+a {
+    color: var(--primary-green);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Icons and Imagery */
+.icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+/* Layout Control */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 20px;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Consistency */
+.header, .footer {
+    background-color: var(--primary-green);
+    color: var(--contrast-color);
+    padding: 20px;
+}
+
+.header .logo, .footer .logo {
+    width: 100px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .flex {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+/* Animation and Transitions */
+.fade-in {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Improved Loading Times */
+.lazy-load {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.lazy-load.loaded {
+    opacity: 1;
+}
+
+/* Accessibility */
+[role="navigation"], [role="main"], [role="contentinfo"] {
+    outline: none;
+}
+
+[tabindex="0"]:focus {
+    outline: 2px solid var(--primary-green);
+}
+
+.alt-text {
+    display: none;
+}
+/* GHG Calculator Page Styles */
+
+/* Color Scheme */
+:root {
+    --primary-green: #006400;
+    --secondary-green: #00cc00;
+    --earth-tone: #8b4513;
+    --blue-tone: #1e90ff;
+    --contrast-color: #ffffff;
+    --background-color: #f0f0f0;
+    --text-color: #333333;
+}
+
+/* Typography */
+.ghg-calculator {
+    font-family: 'Arial', sans-serif;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    padding: 20px;
+}
+
+.ghg-calculator h1, .ghg-calculator h2, .ghg-calculator h3 {
+    font-weight: bold;
+    color: var(--primary-green);
+}
+
+.ghg-calculator p {
+    line-height: 1.6;
+}
+
+/* Layout Control */
+.ghg-calculator .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.ghg-calculator .section {
+    padding: 40px 0;
+}
+
+.ghg-calculator .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.ghg-calculator .flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Buttons and Links */
+.ghg-calculator .button {
+    background-color: var(--secondary-green);
+    color: var(--contrast-color);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.ghg-calculator .button:hover {
+    background-color: var(--primary-green);
+}
+
+.ghg-calculator a {
+    color: var(--primary-green);
+    text-decoration: none;
+}
+
+.ghg-calculator a:hover {
+    text-decoration: underline;
+}
+
+/* Icons and Imagery */
+.ghg-calculator .icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .ghg-calculator .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .ghg-calculator .flex {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+/* Animation and Transitions */
+.ghg-calculator .fade-in {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Improved Loading Times */
+.ghg-calculator .lazy-load {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.ghg-calculator .lazy-load.loaded {
+    opacity: 1;
+}
+
+/* Accessibility */
+.ghg-calculator [role="navigation"], .ghg-calculator [role="main"], .ghg-calculator [role="contentinfo"] {
+    outline: none;
+}
+
+.ghg-calculator [tabindex="0"]:focus {
+    outline: 2px solid var(--primary-green);
+}
+
+.ghg-calculator .alt-text {
+    display: none;
+}
+/* Real-Time Alerts Page Styles */
+
+/* Color Scheme */
+:root {
+    --primary-green: #006400;
+    --secondary-green: #00cc00;
+    --neutral-color: #f0f0f0;
+    --alert-color: #ffcc00;
+    --text-color: #333333;
+    --contrast-color: #ffffff;
+}
+
+/* Typography */
+.alert-page {
+    font-family: 'Arial', sans-serif;
+    color: var(--text-color);
+    background-color: var(--neutral-color);
+    padding: 20px;
+}
+
+.alert-page h1, .alert-page h2, .alert-page h3 {
+    font-weight: bold;
+    color: var(--primary-green);
+}
+
+.alert-page p {
+    line-height: 1.6;
+}
+
+/* Layout Control */
+.alert-page .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.alert-page .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.alert-page .card {
+    background-color: var(--contrast-color);
+    color: var(--text-color);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.alert-page .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.alert-page .card h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.alert-page .card p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.alert-page .card .icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+/* Buttons and Links */
+.alert-page .button {
+    background-color: var(--secondary-green);
+    color: var(--contrast-color);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.alert-page .button:hover {
+    background-color: var(--primary-green);
+}
+
+.alert-page a {
+    color: var(--primary-green);
+    text-decoration: none;
+}
+
+.alert-page a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .alert-page .grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Animation and Transitions */
+.alert-page .fade-in {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Improved Loading Times */
+.alert-page .lazy-load {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.alert-page .lazy-load.loaded {
+    opacity: 1;
+}
+
+/* Accessibility */
+.alert-page [role="navigation"], .alert-page [role="main"], .alert-page [role="contentinfo"] {
+    outline: none;
+}
+
+.alert-page [tabindex="0"]:focus {
+    outline: 2px solid var(--primary-green);
+}
+
+.alert-page .alt-text {
+    display: none;
+}
+/* Achievements Page Styles */
+
+/* Color Scheme */
+:root {
+    --primary-green: #006400;
+    --secondary-green: #00cc00;
+    --blue-tone: #1e90ff;
+    --contrast-color: #ffffff;
+    --background-color: #f0f0f0;
+    --text-color: #333333;
+}
+
+/* Typography */
+.achievements-page {
+    font-family: 'Arial', sans-serif;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    padding: 20px;
+}
+
+.achievements-page h1, .achievements-page h2, .achievements-page h3 {
+    font-weight: bold;
+    color: var(--primary-green);
+}
+
+.achievements-page p {
+    line-height: 1.6;
+}
+
+/* Layout Control */
+.achievements-page .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.achievements-page .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.achievements-page .card {
+    background-color: var(--contrast-color);
+    color: var(--text-color);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.achievements-page .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.achievements-page .card h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.achievements-page .card p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.achievements-page .card .icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+/* Buttons and Links */
+.achievements-page .button {
+    background-color: var(--secondary-green);
+    color: var(--contrast-color);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.achievements-page .button:hover {
+    background-color: var(--primary-green);
+}
+
+.achievements-page a {
+    color: var(--primary-green);
+    text-decoration: none;
+}
+
+.achievements-page a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .achievements-page .grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Animation and Transitions */
+.achievements-page .fade-in {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Improved Loading Times */
+.achievements-page .lazy-load {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.achievements-page .lazy-load.loaded {
+    opacity: 1;
+}
+
+/* Accessibility */
+.achievements-page [role="navigation"], .achievements-page [role="main"], .achievements-page [role="contentinfo"] {
+    outline: none;
+}
+
+.achievements-page [tabindex="0"]:focus {
+    outline: 2px solid var(--primary-green);
+}
+
+.achievements-page .alt-text {
+    display: none;
+}
+/* Hide the achievements page header */
+.achievements-page h1,
+.achievements-page h2,
+.achievements-page h3 {
+    display: none;
+}
+
+/* Ensure the main header is displayed */
+header {
+    display: flex;
+}
+/* Hide the header of the achievements page */
+.achievements-page header {
+    display: none;
+}
+/* Resources Page Styles */
+
+/* Utilize CSS Frameworks */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css');
+
+/* Custom Styles */
+:root {
+    --primary-green: #006400;
+    --secondary-green: #00cc00;
+    --blue-tone: #1e90ff;
+    --contrast-color: #ffffff;
+    --background-color: #f0f0f0;
+    --text-color: #333333;
+    --spacing-unit: 20px;
+}
+
+/* Typography */
+.resources-page {
+    font-family: 'Arial', sans-serif;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    padding: var(--spacing-unit);
+}
+
+.resources-page h1, .resources-page h2, .resources-page h3 {
+    font-weight: bold;
+    color: var(--primary-green);
+}
+
+.resources-page p {
+    line-height: 1.6;
+}
+
+/* Layout Control */
+.resources-page .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: var(--spacing-unit);
+}
+
+.resources-page .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--spacing-unit);
+}
+
+.resources-page .flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Buttons and Links */
+.resources-page .button {
+    background-color: var(--secondary-green);
+    color: var(--contrast-color);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.resources-page .button:hover {
+    background-color: var(--primary-green);
+}
+
+.resources-page a {
+    color: var(--primary-green);
+    text-decoration: none;
+}
+
+.resources-page a:hover {
+    text-decoration: underline;
+}
+
+/* Icons and Imagery */
+.resources-page .icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .resources-page .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .resources-page .flex {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+/* Animation and Transitions */
+.resources-page .fade-in {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Improved Loading Times */
+.resources-page .lazy-load {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.resources-page .lazy-load.loaded {
+    opacity: 1;
+}
+
+/* Accessibility */
+.resources-page [role="navigation"], .resources-page [role="main"], .resources-page [role="contentinfo"] {
+    outline: none;
+}
+
+.resources-page [tabindex="0"]:focus {
+    outline: 2px solid var(--primary-green);
+}
+
+.resources-page .alt-text {
+    display: none;
+}
+/* Hide all pages by default */
+.page {
+    display: none;
+}
+
+/* Show the page when its corresponding header option is clicked */
+.show-home .home-page,
+.show-ghg-calculator .ghg-calculator,
+.show-alerts .alert-page,
+.show-achievements .achievements-page,
+.show-resources .resources-page {
+    display: block;
+}
+
+/* Hide the header on specific pages if needed */
+.show-achievements header,
+.show-resources header {
+    display: none;
+}
