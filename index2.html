@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carbon Emissions Charts</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <h1>Carbon Emissions</h1>
+    
+    <h2>Pie Chart: Carbon Emissions by Sector</h2>
+    <canvas id="pieChart" width="400" height="400"></canvas>
+    
+    <h2>Line Graph: Carbon Emissions Over Time</h2>
+    <canvas id="lineGraph" width="400" height="400"></canvas>
+    
+    <script>
+        // Data for Pie Chart
+        const pieData = {
+            labels: ['Energy Usage', 'Transportation', 'Waste Management'],
+            datasets: [{
+                data: [55, 25, 20], // Example data
+                backgroundColor: ['#FF6384', '#36A2EB', '#FFCE56'],
+                hoverBackgroundColor: ['#FF6384', '#36A2EB', '#FFCE56']
+            }]
+        };
+
+        // Config for Pie Chart
+        const pieConfig = {
+            type: 'pie',
+            data: pieData,
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: {
+                        position: 'top',
+                    },
+                    title: {
+                        display: true,
+                        text: 'Carbon Emissions by Sector'
+                    }
+                }
+            },
+        };
+
+        // Render Pie Chart
+        const pieCtx = document.getElementById('pieChart').getContext('2d');
+        new Chart(pieCtx, pieConfig);
+
+        // Data for Line Graph
+        const lineData = {
+            labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'], // Example months
+            datasets: [{
+                label: 'Carbon Emissions',
+                data: [65, 59, 80, 81, 56, 55, 40], // Example data
+                fill: false,
+                borderColor: 'rgb(75, 192, 192)',
+                tension: 0.1
+            }]
+        };
+
+        // Config for Line Graph
+        const lineConfig = {
+            type: 'line',
+            data: lineData,
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: {
+                        position: 'top',
+                    },
+                    title: {
+                        display: true,
+                        text: 'Carbon Emissions Over Time'
+                    }
+                }
+            },
+        };
+
+        // Render Line Graph
+        const lineCtx = document.getElementById('lineGraph').getContext('2d');
+        new Chart(lineCtx, lineConfig);
+    </script>
+</body>
+</html>
